@@ -13,7 +13,7 @@ CPUS=`lscpu | grep '^CPU(s):' | awk '{print $2}'`
 
 apt-get update
 apt-get install -y build-essential autotools-dev libtool autoconf automake pkg-config cmake
-apt-get install -y openssl libssl-dev libcurl4-openssl-dev libconfig++-dev libboost-all-dev libmysqlclient-dev
+apt-get install -y openssl libssl-dev libcurl4-openssl-dev libconfig++-dev libboost-all-dev libmysqlclient-dev libgmp3-dev
 
 # zmq-v4.1.5
 mkdir -p /root/source && cd /root/source
